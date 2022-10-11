@@ -1,0 +1,110 @@
+.card-body{
+    border-radius: 0px !important;
+}
+
+.card{
+    border: none !important;
+    border-radius: 0px !important;
+    margin: 0px;
+}
+
+.card-img-top{
+    height: 360px !important;
+    resize: both !important;
+    border-radius: 0px !important;
+}
+
+.btn{
+    background-color: rgba(218, 165, 32, 0) !important;
+    border:1px solid  rgba(255, 255, 255, 0.037) !important;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 0px !important;
+}
+
+.light-green{
+    color: rgb(255, 255, 255);
+}
+
+.product{
+    color: #000 !important;
+    float: left !important;
+    direction: ltr !important;
+    height: 500px !important;
+    position: relative;
+    display: block;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.btn-green{
+    background-color: green !important;
+}
+
+
+
+.details{
+    color: #000 !important;
+    float: left;
+    display: block;
+    width: 100% !important;
+}
+.details .accordion-button{
+    width: 85% !important;
+    float: left !important;
+    background-color: rgba(242, 242, 242, 0.574) !important;
+    border: 1px solid rgba(0, 0, 0, 0.21) !important;
+    color: #000 !important;
+}
+
+
+.product-image{
+    float: left;
+    display: block;
+    width: 100% !important;
+    height: 380px !important;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative !important;
+    margin-bottom: 20px !important;
+  }
+
+
+
+
+  .thumb-image{
+    width: 100px !important;
+    height: 80px !important;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative !important;
+    display: block;
+    cursor: pointer;
+    border: 1px solid rgb(148, 148, 148) !important;
+    margin: auto !important;
+  }
+
+
+.form-input{
+    width: 100%;
+    float: left;
+}
+
+
+  .item-image{
+    width: 100% !important;
+    height:fit-content;
+    background-repeat: no-repeat;
+    background-size: auto;  
+    background-position:top;
+    position: relative !important;
+    display: block;
+    transition: 500ms;
+    cursor:zoom-in;
+  }
+
+
+.item-image:hover {
+    background-size: 120%;
+  }

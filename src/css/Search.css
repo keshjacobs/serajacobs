@@ -1,0 +1,5 @@
+.app-search input{
+    background-color:rgba(19, 57, 19, 0.633) !important;
+    color: #fff !important;
+    border: 1px solid rgb(3, 47, 11) !important;
+}

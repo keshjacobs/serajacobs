@@ -1,0 +1,51 @@
+{
+    "name":"Sera Jacobs",
+    "slogan":"Luxury at it's finest",
+    "address":"8 65 Rd, Gwarinpa 900108, Abuja",
+    "map_token":"pk.eyJ1IjoibGlmZWluYXByaWwiLCJhIjoiY2w5MWowOW84MDBoMDNwcnlyd2p3dmJpciJ9.9X0irtvrliCZM2miiJOCaw",
+    "cords":{
+        "lng":9.119635,
+        "lat":7.386302
+    },
+    "contacts":{
+        "phone":"+234 906 529 1086",
+        "email":"support@serajacobs.com",
+        "instagram":"serajacobsltd",
+        "twitter":"serajacobsltd",
+        "facebook":"serajacobsltd"
+    },
+    "public_key":"pk_473440a54cb97f38e6d5a5e8753d1ef903ad07c08f23c",
+    "intercom_id":"pk_yufguyfytftyckgckghvjgguglyufyfugyuguyghuuhu",
+    "jumbo":{
+        "title":"Affordable & Ready To Wear",
+        "body":"Brand new, and already icon-worthy"
+      },
+     "policies":[
+        {
+            "title":"Shipping Policy",
+            "path":"/policies/Shipping"
+        },
+        {
+            "title":"Privacy Policy",
+            "path":"/policies/Privacy"
+        },
+        {
+            "title":"Terms & Conditions",
+            "path":"/policies/Terms"
+        }
+    ],
+    "content":[
+        {   
+            "title":"Affordable & Ready To Wear",
+            "body":"Brand new, and already icon-worthy"
+        },
+        {
+            "title":"Affordable & Ready To Wear",
+            "body":"Brand new, and already icon-worthy"
+         }
+    ],
+    "about":{   
+            "title":"We care about data",
+            "body":"We have a mission to organize data and make it accessible to anyone, anywhere and anytime."
+        }
+    }

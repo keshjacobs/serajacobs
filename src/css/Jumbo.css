@@ -1,0 +1,32 @@
+.box{
+    height: auto;
+    min-height: 500px;
+    color: #fff;
+    box-shadow: inset 0px 500px 400px 0px rgba(0, 0, 0, 0.432) !important;
+    background-size: cover !important;
+    background-repeat:no-repeat !important;
+    text-align: left !important;
+    padding: 50px !important;
+}
+
+.box h1{
+    font-size: 60px !important;
+    font-weight: bolder !important;
+}
+
+.box .btn{
+    background-color: rgba(218, 165, 32, 0) !important;
+    border:2px solid  rgb(255, 255, 255) !important;
+    color: rgb(243, 243, 243) !important;
+    border-radius: 0px !important;
+}
+
+.tint{
+   background-color: rgba(0, 0, 0, 0.514) !important;
+   background-blend-mode: soft-light !important;
+   background-size: cover !important;
+   -webkit-backdrop-filter:blur(30px);
+   backdrop-filter:blur(30px);
+   background-position:center !important;
+   color: #fff !important;
+}

@@ -1,0 +1,17 @@
+
+.map-container {
+    height: 400px;
+    background-color: rgba(35, 55, 75, 0.9);
+    width: 100% !important;
+    float: left !important;
+    }
+
+    .sidebar {
+        background-color: rgba(35, 55, 75, 0.9);
+        color: #fff;
+        padding: 6px 12px;
+        font-family: monospace;
+        margin: 12px;
+        border-radius: 4px;
+      }
+      

@@ -1,0 +1,110 @@
+
+.brief{
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100vw !important;
+    padding: 20px !important;
+    margin: 0px !important;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    
+}
+.container{
+    margin:0px !important;
+    width: 100vw !important;
+}
+.sec{
+    max-width: 300px !important;
+    margin: auto !important;
+}
+.list-group-item-dark{
+    background-color: rgba(0, 0, 0, 0.104) !important;
+    /* background: linear-gradient(144deg, rgb(0, 0, 0) 0%, rgb(35, 5, 9) 47%, rgb(9, 2, 4) 100%); */
+    border: none !important;
+}
+
+.list-group-item{
+    color: #fff !important;
+}
+
+.brief-dark{
+    background-color: rgba(26, 95, 20, 0.4);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter: blur(20px);
+    }
+
+  .brief-light{
+        background: #fff !important;
+        }
+            
+
+.brief-head b{ 
+    font-size: 40px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+          
+
+.brief-icon{ 
+    font-size: 60px !important;
+    margin: 30px !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+.text-right{
+    text-align: right !important;
+}
+.text-center{
+    text-align: center !important;
+}
+
+.brief-body{ 
+    font-size: 15px !important;
+}
+
+.light,.light .icon{
+    color: #fff !important;
+}
+
+.dark,.dark .icon{
+    color: rgb(19, 17, 17) !important;
+}
+
+.padding{
+    padding: 45px !important;
+}
+
+.text-teal{
+    color: teal !important;
+}
+
+
+
+
+
+
+
+
+
+ .info-enter {
+    opacity: 0.01;
+  }
+  
+  .info-enter.info-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+  }
+  
+  .info-leave {
+    opacity: 1;
+  }
+  
+  .info-leave.info-leave-active {
+    opacity: 0.01;
+    transition: opacity 1000ms ease-in;
+  }
+  
+
