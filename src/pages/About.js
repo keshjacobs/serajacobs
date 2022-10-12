@@ -15,6 +15,7 @@ var About = function(props) {
     const {term} = useParams(); 
   return (
         <>
+        <br/>
         <Title image={app.jumbo.image} variant="light" name="About Us"/>
        <Navbar bg="light" expand="sm">
         <Container>

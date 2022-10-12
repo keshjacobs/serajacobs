@@ -115,3 +115,13 @@ background-color: rgb(255, 182, 45) !important;
 
 
 
+
+ .minibar{
+    text-align: center !important;
+    color:#fff !important;
+    background-color: rgb(213, 139, 49) !important;
+    padding:8px !important;
+    width: 100% !important;
+    float: left;
+}
+

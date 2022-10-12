@@ -9,7 +9,9 @@ import Commerce from '@chec/commerce.js';
 const commerce = new Commerce(app.public_key);
 
 function Cart(props){
-    const [cart, getCart] = useState({}); 
+    const [cart, getCart] = useState({
+        line_items:[]
+    }); 
     const [show, setShow] = useState(false);
     const [Loading, startLoad] = useState(true); 
     
@@ -43,14 +45,14 @@ return (
     <>
             <Button className="cart-button" onClick={handleShow}>
                 <IoMdBasket color={props.dark ? 'black':'white'} size={30}/>
-                <Badge show={cart ? true:false} bg='orange'>{cart.line_items ? cart.line_items.length:0}</Badge>
+                {cart.line_items.length > 0 ? <Badge show={cart.line_items} bg='orange'>{cart.line_items ? cart.line_items.length:0}</Badge>:null}
             </Button>
             <Offcanvas variant="light" show={show} className="bg-light" onHide={handleClose} placement="end">
                 <Offcanvas.Header variant="light" closeButton>
                     Your Cart
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                {cart.line_items ?
+                {cart ?
                 (cart.line_items.length > 0 ? 
                 cart.line_items.map(function(product,key){
                 return(
@@ -60,6 +62,7 @@ return (
                 :<Empty title="Your cart is empty"/>):null
                     }
                 </Offcanvas.Body>
+                {cart.line_items.length > 0 ?
                 <ModalFooter>     
                     <Row className="checkout padding">
                     {Loading ? <Spinner className='light center' animation="border" />:
@@ -72,6 +75,7 @@ return (
                       }
                     </Row>
                 </ModalFooter>
+                    :null}
                
               </Offcanvas>
 

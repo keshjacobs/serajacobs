@@ -22,7 +22,9 @@ function Result(props) {
         });
   return (
     <>
-    <Navbar bg="light" expand="sm">
+    <br/>
+      <br/>
+    <Navbar>
         <Container>
             <div className="padding text-center">
                 <h2>Search for "{term}"</h2>

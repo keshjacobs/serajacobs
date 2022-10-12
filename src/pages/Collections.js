@@ -12,10 +12,23 @@ const Collections = () => {
     });
   return (
     <Container fluid>
+    <br/>
+    <br/>
+    <br/>
       <br/>
       <br/>
       <br/>
          <Category items={category}/>
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </Container>
   );
 };

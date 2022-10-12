@@ -13,12 +13,14 @@ import Result from "./pages/Result";
 import Policy from "./pages/Policy";
 import About from "./pages/About";
 import Locator from "./pages/Locator";
+import Bar from "./components/Bars/Bar";
 
 const App =function() {
 
     return (
         <Router>
           <HeadBar dark={true} icon={app.icon} />
+           <Bar>Get same day delivery within Lagos & Abuja</Bar>
           <Routes>
             <Route exact path="/" element={<Home/>} />
             <Route path="/shop/:category" element={<Shop />} />

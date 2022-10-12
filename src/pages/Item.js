@@ -69,6 +69,8 @@ var Item = function(props) {
     console.log(product);
   return (
         <>
+
+      <br/>
         <Breadcrumb className="padding">
             <Breadcrumb.Item href="/">
                 Home
@@ -157,6 +159,12 @@ var Item = function(props) {
                         :null}
             </Col>
         </div>
+        <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
        </>
   );
 };

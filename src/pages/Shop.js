@@ -22,7 +22,9 @@ function Shop(props) {
         });
   return (
     <>
-    <Navbar bg="light" expand="sm">
+    <br/>
+    <br/>
+    <Navbar>
         <Container>
             <div className="justify-content-start">
                 <Breadcrumb className="padding">
@@ -53,6 +55,12 @@ function Shop(props) {
             );
         })}
     </Row>:<Spinner className='dark center' animation="border" />):<Empty title="No item available at the moment"/>)}
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     </>
   );
 }

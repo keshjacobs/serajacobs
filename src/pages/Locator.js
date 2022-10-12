@@ -11,7 +11,10 @@ var Location = function() {
     const [lat, setLat] = useState(app.cords.lat);
   return (
         <>
-       <Navbar bg="light" expand="sm">
+
+      <br/>
+      <br/>
+       <Navbar>
         <Container>
             <div className="justify-content-start">
                 <Breadcrumb className="padding">
