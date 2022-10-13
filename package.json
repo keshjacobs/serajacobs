@@ -1,6 +1,6 @@
 {
   "name": "serajacobs",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "private": true,
   "dependencies": {
     "@chec/commerce.js": "^2.8.0",
