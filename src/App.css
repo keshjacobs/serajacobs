@@ -44,3 +44,11 @@ h3,h4{
   font-family: 'Paytone One', sans-serif;
   text-align: center !important;
 }
+
+.toast{
+  z-index: 100000 !important;
+  position:fixed !important;
+  float: right !important;
+  right: 20px !important;
+  display: block !important;
+}

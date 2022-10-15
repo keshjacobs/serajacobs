@@ -94,10 +94,7 @@
 
   .item-image{
     width: 100% !important;
-    height:fit-content;
-    background-repeat: no-repeat;
-    background-size: auto;  
-    background-position:top;
+    float: left !important;
     position: relative !important;
     display: block;
     transition: 500ms;

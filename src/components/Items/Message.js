@@ -7,7 +7,7 @@ function Message(props) {
             setShow(props.show);
         },[]);
         return (
-                <Toast bg={props.success ? 'Success':'Danger'} className="d-inline-block m-1" onClose={() => setShow(false)} show={show} delay={3000} autohide>
+                <Toast bg={props.success ? 'Success':'Danger'} className="d-inline-block m-1" onClose={() => setShow(false)} show={show} delay={3000}>
                     <Toast.Header>
                     <strong className="me-auto">{props.success ? 'Successful':'Failed'}</strong>
                     </Toast.Header>

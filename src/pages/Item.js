@@ -16,20 +16,15 @@ import Message from '../components/Items/Message';
 
 const commerce = new Commerce(app.public_key);
 
-var Item = function(props) {
+var Item = function() {
     const {id} = useParams(); 
     const [product, getProduct] = useState({}); 
     const [mainImage, getImage] = useState(""); 
     const [vary, setVary] = useState({}); 
     const [category, getCategory] = useState(""); 
     const [Loading, startLoad] = useState(false); 
-    const [msg, getMessage] = useState({
-        success:false,
-        show:false,
-        body:""
-    }); 
     const [Qty, setQty] = useState(1); 
-
+   const [pop, PopUp] = useState({show:false});
     var CartQty=(qty)=>{
         if(qty > 0){
             setQty(qty);
@@ -40,7 +35,7 @@ var Item = function(props) {
         commerce.cart.add(product.id,Qty,vary).then(function(response){
             startLoad(false);
             if(response){
-                getMessage({ 
+                PopUp({ 
                     success:true,
                     show:true,
                     body:"Added to cart"
@@ -69,7 +64,8 @@ var Item = function(props) {
     console.log(product);
   return (
         <>
-
+       <Message show={pop.show} success={pop.success} title={pop.title} body={pop.body}/>                   
+             
       <br/>
         <Breadcrumb className="padding">
             <Breadcrumb.Item href="/">
@@ -107,8 +103,8 @@ var Item = function(props) {
                         }
             </Col>
             <Col sm={12} md={4}>
-            {mainImage ? 
-                <div className='padding'>
+            {product ? 
+                <div style={{padding:10}}>
                 <Animate>
                         <h2>{product.name}</h2>
                         <small>{category}</small>
@@ -149,7 +145,6 @@ var Item = function(props) {
                                 <br/>
                                 <br/>
                                 <div className="d-grid gap-3">
-                                <Message show={msg.show} body={msg.body} success={msg.success}/>
                                 <a size='lg' className='btn btn-green' disabled={Loading} variant="green" onClick={()=> addcart()}>{Loading ? "Adding...":"Add to Cart"}</a>
                                 <a href={product.checkout_url ? product.checkout_url.checkout:null} className="btn checkout-button">Buy Now</a>
                                 </div>

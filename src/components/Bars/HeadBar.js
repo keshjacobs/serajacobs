@@ -18,7 +18,13 @@ return (
 <>
       <Navbar sticky="top" variant={props.dark ? "dark":"light"} expand="lg" className={props.dark ? 'bg-dark headbar justify-content-evenly':'bg-light headbar justify-content-evenly'}>
           <Container>
-            <Navbar.Brand href="/">
+           
+          <Nav>
+                <Navbar.Toggle aria-controls="menu" />
+            </Nav>
+       
+          
+          <Navbar.Brand href="/" style={{float:"left"}}>
             {props.icon ? 
             <>
                       <img
@@ -43,19 +49,18 @@ return (
                 }
             </Navbar.Collapse>
 
-            <Navbar.Collapse id="menu" className="justify-content-end">
+            <Navbar.Collapse id="menu" className="justify-content-evenly">
               <Nav>
                 <Search dark={true}/>
               </Nav>
+              <br/>
             </Navbar.Collapse>
-
-            {/* <Nav>
-                <LoginButton  variant="dark"/>
-            </Nav> */}
             <Nav>
                 <Cart/>
             </Nav>
-            <Navbar.Toggle aria-controls="menu" />
+            {/* <Nav>
+                <LoginButton  variant="dark"/>
+            </Nav> */}
             </Container>
       </Navbar>
     </>
