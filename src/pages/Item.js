@@ -63,8 +63,7 @@ var Item = function() {
     console.log("prod:");
     console.log(product);
   return (
-        <>
-       <Message show={pop.show} success={pop.success} title={pop.title} body={pop.body}/>                   
+        <>                
              
       <br/>
         <Breadcrumb className="padding">
@@ -78,6 +77,7 @@ var Item = function() {
                 {product ? product.name:null}
             </Breadcrumb.Item>
         </Breadcrumb>
+       <Message show={pop.show} success={pop.success} title={pop.title} body={pop.body}/>   
         <div className='row'>
            
             <Col sm={12} md={5}>

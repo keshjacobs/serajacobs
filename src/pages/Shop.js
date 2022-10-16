@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 import app from "../Config";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import { Container,Row , Col,Navbar, Spinner } from "react-bootstrap";
+import { Nav,Row , Col,Navbar, Spinner } from "react-bootstrap";
 import Commerce from '@chec/commerce.js';
 import Product from "../components/Items/Product";
 import Sort from "../components/Items/Sort";
@@ -22,12 +22,9 @@ function Shop(props) {
         });
   return (
     <>
-    <br/>
-    <br/>
-    <Navbar>
-        <Container>
-            <div className="justify-content-start">
-                <Breadcrumb className="padding">
+    <Row className="padding">
+            <Col sm={12} md={3} className="text-center">
+                <Breadcrumb>
                     <Breadcrumb.Item href="/">
                         Home
                     </Breadcrumb.Item>
@@ -35,15 +32,14 @@ function Shop(props) {
                         {category}
                     </Breadcrumb.Item>
                 </Breadcrumb>
-            </div>
-            <div className="justify-content-end">
+            </Col>
+            <Col sm={false} md={6} className="text-center">
             <h6 className="dark">{products ? products.length:0} Products</h6>
-            </div>
-            <div className="justify-content-end">
+            </Col>
+            <Col sm={12} md={3}>
                 <Sort/>
-            </div>
-        </Container>
-    </Navbar>
+            </Col>
+    </Row>
     {(products ?
     (products.length > 0 ?
     <Row className="padding">

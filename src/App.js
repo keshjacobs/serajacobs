@@ -17,7 +17,6 @@ import Bar from "./components/Bars/Bar";
 import { GrDeliver } from "react-icons/gr";
 
 const App =function() {
-
     return (
         <Router>
           <HeadBar dark={true} icon={app.icon} />

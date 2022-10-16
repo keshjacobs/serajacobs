@@ -3,8 +3,7 @@
     color: #fff !important;
     border: 1px solid rgb(3, 47, 11) !important;
     width:100% !important;
-    min-width: 30vw !important;
-    float: left !important;
+    min-width: 40vw !important;
     display: flexbox;
     direction: ltr !important;
 }
