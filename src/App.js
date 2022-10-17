@@ -15,10 +15,12 @@ import About from "./pages/About";
 import Locator from "./pages/Locator";
 import Bar from "./components/Bars/Bar";
 import { GrDeliver } from "react-icons/gr";
+import ScrollToTop from "./components/Items/ScrollToTop";
 
 const App =function() {
     return (
         <Router>
+          <ScrollToTop/>
           <HeadBar dark={true} icon={app.icon} />
            <Bar className="light">Get same day delivery within Lagos & Abuja &nbsp;&nbsp;<GrDeliver className="light" size={20}/> <a href="/policies/Shipping">learn about our Shipping policy</a></Bar>
           <Routes>

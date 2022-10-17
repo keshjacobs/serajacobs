@@ -63,8 +63,7 @@ var Item = function() {
     console.log("prod:");
     console.log(product);
   return (
-        <div className='bg-light'>                
-             
+        <div className='bg-light'>  
       <br/>
         <Breadcrumb className="padding bg-light">
             <Breadcrumb.Item href="/">
