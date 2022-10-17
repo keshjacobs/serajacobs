@@ -19,7 +19,6 @@ function Cart(props){
     commerce.cart.retrieve().then(function(crt){ 
         if(crt){
             getCart(crt);
-            console.log(cart);
         }
    }); 
 

@@ -26,14 +26,14 @@ function Shop(props) {
             <Col sm={12} md={3} className="text-center">
                 <Breadcrumb>
                     <Breadcrumb.Item href="/">
-                        Home
+                        Hom
                     </Breadcrumb.Item>
                     <Breadcrumb.Item active>
                         {category}
                     </Breadcrumb.Item>
                 </Breadcrumb>
             </Col>
-            <Col sm={false} md={6} className="text-center">
+            <Col sm={12} md={6} className="text-center">
             <h6 className="dark">{products ? products.length:0} Products</h6>
             </Col>
             <Col sm={12} md={3}>
@@ -42,10 +42,10 @@ function Shop(props) {
     </Row>
     {(products ?
     (products.length > 0 ?
-    <Row className="padding bg-light">
+    <Row>
         {products.map(function(product,key){
             return(
-                <Col sm={12} md={3} key={key}>
+                <Col sm={3} md={3} key={key}>
                     <Product key={key} item={product}/>
                 </Col>
             );

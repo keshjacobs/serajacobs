@@ -12,7 +12,8 @@ import app from "../Config";
 import Commerce from '@chec/commerce.js';
 import Mirror from '../components/Items/Mirror';
 import Error from '../components/Items/Error';
-import Message from '../components/Items/Message';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const commerce = new Commerce(app.public_key);
 
@@ -24,7 +25,6 @@ var Item = function() {
     const [category, getCategory] = useState(""); 
     const [Loading, startLoad] = useState(false); 
     const [Qty, setQty] = useState(1); 
-   const [pop, PopUp] = useState({show:false});
     var CartQty=(qty)=>{
         if(qty > 0){
             setQty(qty);
@@ -33,14 +33,8 @@ var Item = function() {
     const addcart = function() {
         startLoad(true);
         commerce.cart.add(product.id,Qty,vary).then(function(response){
+            toast('Added to cart',{position: toast.POSITION.BOTTOM_CENTER,autoClose:6000});
             startLoad(false);
-            if(response){
-                PopUp({ 
-                    success:true,
-                    show:true,
-                    body:"Added to cart"
-                });
-            }
         });
     }
 
@@ -60,8 +54,6 @@ var Item = function() {
             });
     },[id, vary])
 
-    console.log("prod:");
-    console.log(product);
   return (
         <div className='bg-light'>  
       <br/>
@@ -76,7 +68,6 @@ var Item = function() {
                 {product ? product.name:null}
             </Breadcrumb.Item>
         </Breadcrumb>
-       <Message show={pop.show} success={pop.success} title={pop.title} body={pop.body}/>   
         <div className='row'>
            
             <Col sm={12} md={5}>

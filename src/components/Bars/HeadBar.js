@@ -10,8 +10,8 @@ const commerce = new Commerce(app.public_key);
 const HeadBar = (props) => {
   const [category, setCat] = useState([{name:"MEN"},{name:"WOMEN"},{name:"KIDS"}]);  
   useEffect(function(){
-    commerce.categories.list().then(function(category){
-      setCat(category.data);
+    commerce.categories.list().then(function(cat){
+      setCat(cat.data);
     });
   })
 return (
