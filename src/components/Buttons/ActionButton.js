@@ -17,7 +17,7 @@ class ActionButton extends React.Component{
 
 return (
             <>
-            <Button as={Link} to={this.props.path} variant={this.props.dark ? "green":"orange"} size='lg'>{this.props.name}</Button>
+            <Button as={Link} to={this.props.path} variant="green" size='lg'>{this.props.name}</Button>
             </>
 
 );

@@ -29,7 +29,9 @@ button,.btn{
 }
 
 body{
-  background-color: rgb(244, 255, 240);
+  background-color: rgb(220, 236, 214);
+  background-image: url('./images/bg/wave2.jpeg');
+  background-blend-mode:soft-light;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,800&family=Paytone+One&family=Poppins:wght@200&family=Silkscreen:wght@700&family=Syncopate:wght@700&display=swap');

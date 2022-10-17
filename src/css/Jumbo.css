@@ -5,6 +5,7 @@
     box-shadow: inset 0px 500px 400px 0px rgba(0, 0, 0, 0.432) !important;
     background-size: cover !important;
     background-repeat:no-repeat !important;
+    background-position: fixed !important;
     text-align: left !important;
     padding: 50px !important;
 }

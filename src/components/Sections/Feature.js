@@ -11,7 +11,7 @@ import Animate from '../../Motion';
 
 const Feature = (props) => {
 return (
-    <>
+    <div className='bg-light'>
             <div className='text-center padding' style={{maxWidth:700,margin:"auto"}}>
                 {props.title ?  <h1 className={props.variant}>{props.title}</h1>:null}
                 {props.body ?  <h6 className={props.variant}>{props.body}</h6>:null}
@@ -32,7 +32,7 @@ return (
             <br/>
             <br/>
             <br/>
-    </>
+    </div>
 );
 };
 

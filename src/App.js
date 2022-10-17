@@ -20,7 +20,7 @@ const App =function() {
     return (
         <Router>
           <HeadBar dark={true} icon={app.icon} />
-           <Bar className="light">Get same day delivery within Lagos & Abuja &nbsp;&nbsp;<GrDeliver className="light" size={20}/></Bar>
+           <Bar className="light">Get same day delivery within Lagos & Abuja &nbsp;&nbsp;<GrDeliver className="light" size={20}/> <a href="/policies/Shipping">learn about our Shipping policy</a></Bar>
           <Routes>
             <Route exact path="/" element={<Home/>} />
             <Route path="/shop/:category" element={<Shop />} />

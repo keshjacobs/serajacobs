@@ -21,7 +21,7 @@ function Result(props) {
             }
         });
   return (
-    <>
+    <div className="bg-light">
     <br/>
       <br/>
     <Navbar>
@@ -36,7 +36,7 @@ function Result(props) {
     <Row className="padding">
         {products.map(function(product,key){
             return(
-                <Col sm={12} md={4} key={key}>
+                <Col sm={12} md={2} key={key}>
                     <Animate>
                     <Product key={key} item={product}/>
                     </Animate>
@@ -47,7 +47,7 @@ function Result(props) {
     <br/>
     <br/>
     <br/>
-    </>
+    </div>
   );
 }
 

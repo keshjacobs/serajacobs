@@ -21,8 +21,8 @@ function Shop(props) {
             }
         });
   return (
-    <>
-    <Row className="padding">
+    <div className="bg-light">
+    <Row className="padding bg-light">
             <Col sm={12} md={3} className="text-center">
                 <Breadcrumb>
                     <Breadcrumb.Item href="/">
@@ -42,7 +42,7 @@ function Shop(props) {
     </Row>
     {(products ?
     (products.length > 0 ?
-    <Row className="padding">
+    <Row className="padding bg-light">
         {products.map(function(product,key){
             return(
                 <Col sm={12} md={3} key={key}>
@@ -57,7 +57,7 @@ function Shop(props) {
     <br/>
     <br/>
     <br/>
-    </>
+    </div>
   );
 }
 

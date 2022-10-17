@@ -14,26 +14,17 @@ const commerce = new Commerce(app.public_key);
 var About = function(props) {
     const {term} = useParams(); 
   return (
-        <>
-        <br/>
-        <Title image={app.jumbo.image} variant="light" name="About Us"/>
-       <Navbar bg="light" expand="sm">
-        <Container>
-            <div className="justify-content-start">
-                <Breadcrumb className="padding">
-                    <Breadcrumb.Item href="/">
-                        Home
-                    </Breadcrumb.Item>
-                    <Breadcrumb.Item>
-                        About Us
-                    </Breadcrumb.Item>
-                </Breadcrumb>
-            </div>
-        </Container>
-    </Navbar>
+        <div className='bg-light'>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Brief dark={false} full={false}  data={app.about} set="first" image={app.about.image}/> 
+            <br/>
+            <br/>
+            <br/>
 
-            <Brief dark={false} full={true}  data={app.about} set="first" image={app.bg[0]}/>   
-       </>
+       </div>
   );
 };
 export default About;

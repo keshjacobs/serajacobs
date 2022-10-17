@@ -10,7 +10,7 @@ var Location = function() {
     const [lng, setLng] = useState(app.cords.lng);
     const [lat, setLat] = useState(app.cords.lat);
   return (
-        <>
+        <div className='bg-light'>
 
       <br/>
       <br/>
@@ -71,7 +71,7 @@ var Location = function() {
         <br/>
         <br/>
         <br/>
-       </>
+       </div>
   );
 };
 export default Location;

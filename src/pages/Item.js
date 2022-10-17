@@ -63,10 +63,10 @@ var Item = function() {
     console.log("prod:");
     console.log(product);
   return (
-        <>                
+        <div className='bg-light'>                
              
       <br/>
-        <Breadcrumb className="padding">
+        <Breadcrumb className="padding bg-light">
             <Breadcrumb.Item href="/">
                 Home
             </Breadcrumb.Item>
@@ -160,7 +160,7 @@ var Item = function() {
     <br/>
     <br/>
     <br/>
-       </>
+       </div>
   );
 };
 export default Item;

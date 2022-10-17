@@ -11,7 +11,7 @@ const Collections = () => {
       setCat(category.data);
     });
   return (
-    <Container fluid>
+    <Container className="bg-light" fluid>
     <br/>
     <br/>
     <br/>
