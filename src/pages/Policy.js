@@ -22,7 +22,7 @@ var Policy = function() {
     }
 },[term]);
   return (
-        <>
+        <div className="bg-light">
        <Navbar bg="light" expand="sm">
         <Container>
             <div className="justify-content-start">
@@ -43,7 +43,7 @@ var Policy = function() {
         <Container fluid>
                 <Content title={term} sections={doc}/>
         </Container>
-       </>
+       </div>
   );
 };
 export default Policy;
