@@ -15,6 +15,8 @@ import Error from '../components/Items/Error';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import {stripHtml} from 'string-strip-html';
+
 const commerce = new Commerce(app.public_key);
 
 var Item = function() {
@@ -25,6 +27,7 @@ var Item = function() {
     const [category, getCategory] = useState(""); 
     const [Loading, startLoad] = useState(false); 
     const [Qty, setQty] = useState(1); 
+    const { result } = stripHtml(product.description);
     var CartQty=(qty)=>{
         if(qty > 0){
             setQty(qty);
@@ -101,7 +104,7 @@ var Item = function() {
                         <h6><small>ID: {product.id}</small></h6>
                         <b className='green'>{product.price ? product.price.formatted_with_symbol:0}</b>
                         
-                        {product.description ?  product.description:null}
+                        {result}
 
                 </Animate>
                         {product.variant_groups ?

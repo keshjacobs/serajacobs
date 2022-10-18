@@ -16,6 +16,7 @@ import Locator from "./pages/Locator";
 import Bar from "./components/Bars/Bar";
 import { GrDeliver } from "react-icons/gr";
 import ScrollToTop from "./components/Items/ScrollToTop";
+import Collect from "./pages/Collect";
 
 const App =function() {
     return (
@@ -26,6 +27,7 @@ const App =function() {
           <Routes>
             <Route exact path="/" element={<Home/>} />
             <Route path="/shop/:category" element={<Shop />} />
+            <Route path="/collections/:id" element={<Collect />} />
             <Route path="/item/:id" element={<Item />} />
             <Route path="/collections" element={<Collections />} />
             <Route path="/about" element={<About />} />

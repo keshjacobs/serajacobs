@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@900&family=Righteous&family=Open+Sans:ital,wght@0,300;0,800;1,800&family=Paytone+One&family=Poppins:wght@200&family=Silkscreen:wght@700&family=Syncopate:wght@700&family=Luxurious+Roman&display=swap');
 
-
-
-*{
-  font-family: 'Oxygen', sans-serif !important;
-}
 
 input{
   border: 1px solid rgb(56, 56, 56) !important;
@@ -34,16 +29,19 @@ body{
   background-blend-mode:soft-light;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,800&family=Paytone+One&family=Poppins:wght@200&family=Silkscreen:wght@700&family=Syncopate:wght@700&display=swap');
-
 b,h1{
-  font-family:'Righteous', sans-serif;
+  font-family: 'Luxurious Roman', cursive !important;
 }
-h2,h5,h6{
-  font-family:'Open Sans', sans-serif;
+h2{
+  font-family:'Syncopate', sans-serif !important;
 }
-h3,h4{
-  font-family: 'Comfortaa', sans-serif;
+
+i,.title,h6{
+  font-family:'Poppins', sans-serif !important;
+}
+
+h3,h4,h5,.navbar-text b{
+  font-family: 'Comfortaa', sans-serif !important;
   text-align: center !important;
 }
 
