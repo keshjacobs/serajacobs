@@ -1,25 +1,39 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import {
   useParams
 } from "react-router-dom";
 import app from "../Config";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import { Nav,Row , Col,Navbar, Spinner } from "react-bootstrap";
+import {Row , Col, Spinner } from "react-bootstrap";
 import Commerce from '@chec/commerce.js';
 import Product from "../components/Items/Product";
 import Sort from "../components/Items/Sort";
-import Animate from "../Motion";
 import Empty from "../components/Items/Empty";
 const commerce = new Commerce(app.public_key);
 
 function Shop(props) {
     const {category}=useParams();
     const [products, setProducts] = useState([]); 
-        commerce.products.list({category_slug:[category]}).then(function(prods){ 
-            if(prods){
-                setProducts(prods.data);
-            }
-        });
+    const [order, setOrder] = useState('asc'); 
+
+    const handleSort = event => {
+        setProducts([]);
+       setOrder(event.target.value);
+      };
+
+    useEffect(function(){
+    commerce.products.list({
+        category_slug:[category],
+        sortBy: 'price',
+        sortDirection: order
+    }).then(function(prods){ 
+        if(prods){
+            setProducts(prods.data);
+        }
+    });
+    },[order,products]);
+
+
   return (
     <div className="bg-light">
     <Row className="padding bg-light">
@@ -37,7 +51,7 @@ function Shop(props) {
             <h6 className="dark">{products ? products.length:0} Products</h6>
             </Col>
             <Col sm={12} md={3}>
-                <Sort/>
+                <Sort order={order} handleSort={handleSort}/>
             </Col>
     </Row>
     {(products ?

@@ -21,13 +21,15 @@ const commerce = new Commerce(app.public_key);
 
 var Item = function() {
     const {id} = useParams(); 
-    const [product, getProduct] = useState({}); 
+    const [product, getProduct] = useState({description:"<p></p>"}); 
+    const [description, getDescription] = useState(""); 
     const [mainImage, getImage] = useState(""); 
     const [vary, setVary] = useState({}); 
     const [category, getCategory] = useState(""); 
     const [Loading, startLoad] = useState(false); 
     const [Qty, setQty] = useState(1); 
-    const { result } = stripHtml(product.description);
+
+
     var CartQty=(qty)=>{
         if(qty > 0){
             setQty(qty);
@@ -53,6 +55,7 @@ var Item = function() {
                 getProduct(prod);
                 getImage(prod.image.url);
                 getCategory(prod.categories[0].slug);
+                getDescription(stripHtml(prod.description).result);
             }
             });
     },[id, vary])
@@ -98,13 +101,15 @@ var Item = function() {
             <Col sm={12} md={4}>
             {product ? 
                 <div style={{padding:10}}>
+                    <br/>
+                    <br/>
                 <Animate>
                         <h2>{product.name}</h2>
                         <small>{category}</small>
                         <h6><small>ID: {product.id}</small></h6>
                         <b className='green'>{product.price ? product.price.formatted_with_symbol:0}</b>
-                        
-                        {result}
+                        <br/>
+                        {description}
 
                 </Animate>
                         {product.variant_groups ?
