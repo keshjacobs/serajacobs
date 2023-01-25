@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import "../../css/Header.css";
-import {Navbar,Nav, Container,Offcanvas} from 'react-bootstrap';
+import {Navbar,Nav, Container} from 'react-bootstrap';
 import Cart from '../Items/Cart';
 import Search from '../Items/Search';
 import Commerce from '@chec/commerce.js';
@@ -8,7 +8,7 @@ import app from '../../Config';
 const commerce = new Commerce(app.public_key);
 
 const HeadBar = (props) => {
-  const [category, setCat] = useState([{name:"MEN"},{name:"WOMEN"},{name:"KIDS"}]);  
+  const [category, setCat] = useState([]);  
   useEffect(function(){
     commerce.categories.list().then(function(cat){
       setCat(cat.data);
