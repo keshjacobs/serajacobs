@@ -16,6 +16,7 @@ import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import {stripHtml} from 'string-strip-html';
+import SlideBox from '../components/Sections/SliderBox';
 
 const commerce = new Commerce(app.public_key);
 
@@ -75,30 +76,34 @@ var Item = function() {
             </Breadcrumb.Item>
         </Breadcrumb>
         <div className='row'>
-           
-            <Col sm={12} md={5}>
+            <Col sm={12} md={7}>
                 {mainImage ? 
-                 <Animate>
-                 <Image className='item-image' src={mainImage}/>
-             </Animate>
-             :<Spinner className='dark center' animation="border" />
-             }   
+                    <Animate>
+                        {/* <Image className='item-image' src={mainImage}/> */}
+                        <SlideBox items={product.assets}/>
+                    </Animate>
+                    :<Spinner className='dark center' animation="border" />
+                }   
                 <br/>
                 <br/>
+                {/* <Row>
+                    <Col sm={12}>
+                                {product.assets ?
+                                    // eslint-disable-next-line array-callback-return
+                                    product.assets.splice(0,4).map(function(asset,key){
+                                            if(asset){
+                                                return(<a key={key} onClick={()=>getImage(asset.url)}>
+                                                            <Mirror url={asset.url}/>
+                                                        </a>)
+                                            }
+                                    }):null
+                                }
+                    </Col>
+                </Row> */}
             </Col>
-            <Col sm={12} md={{span:2,order: "first" }}>
-                        {product.assets ?
-                            // eslint-disable-next-line array-callback-return
-                            product.assets.map(function(asset,key){
-                                    if(asset){
-                                        return(<a key={key} onClick={()=>getImage(asset.url)}>
-                                                    <Mirror url={asset.url}/>
-                                                </a>)
-                                    }
-                            }):null
-                        }
-            </Col>
-            <Col sm={12} md={4}>
+
+            <Col sm={12} md={5}>
+                <div className='padding'>
             {product ? 
                 <div style={{padding:10}}>
                     <br/>
@@ -149,7 +154,8 @@ var Item = function() {
                             </>
                         :<Error text="Out of stock"/>):null}
                         </div>
-                        :null}
+                        :null}    
+                </div>
             </Col>
         </div>
         <br/>

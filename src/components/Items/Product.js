@@ -10,17 +10,15 @@ function Product(props) {
   return (
     <>
     {product ?
-    <div className='product'>
-      <Link to={'/item/'+product.id}>
+      <Link className="product" to={'/item/'+product.id}>
         <Animate>
           <div className='product-image' style={{backgroundImage:"url("+(product.image ? product.image.url:null)+")"}}></div>
           <div className='details'>
-              <b>{product.name}</b>
+              <v>{product.name}</v>
               <h6><b>{product.price ? product.price.formatted_with_symbol:0}</b></h6>
           </div>
         </Animate>
-      </Link>
-    </div>:null}
+      </Link>:null}
     </>
   );
 }

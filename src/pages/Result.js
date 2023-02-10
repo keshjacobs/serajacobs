@@ -36,7 +36,7 @@ function Result(props) {
     <Row className="padding">
         {products.map(function(product,key){
             return(
-                <Col sm={12} md={2} key={key}>
+                <Col xs={6} sm={6} md={2} key={key}>
                     <Animate>
                     <Product key={key} item={product}/>
                     </Animate>

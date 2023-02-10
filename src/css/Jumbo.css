@@ -1,6 +1,6 @@
 .box{
     height: auto;
-    min-height: 500px;
+    min-height: 300px;
     color: #fff;
     box-shadow: inset 0px 500px 400px 0px rgba(0, 0, 0, 0.432) !important;
     background-size: cover !important;
@@ -8,6 +8,9 @@
     background-position: fixed !important;
     text-align: left !important;
     padding: 50px !important;
+    width: 100% !important;
+    float: left !important;
+    
 }
 
 .box h1{

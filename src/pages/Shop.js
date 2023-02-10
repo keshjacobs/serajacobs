@@ -40,7 +40,7 @@ function Shop(props) {
             <Col sm={12} md={3} className="text-center">
                 <Breadcrumb>
                     <Breadcrumb.Item href="/">
-                        Hom
+                        Home
                     </Breadcrumb.Item>
                     <Breadcrumb.Item active>
                         {category}
@@ -59,7 +59,7 @@ function Shop(props) {
     <Row>
         {products.map(function(product,key){
             return(
-                <Col sm={3} md={3} key={key}>
+                <Col xs={6} sm={6} md={3} key={key}>
                     <Product key={key} item={product}/>
                 </Col>
             );

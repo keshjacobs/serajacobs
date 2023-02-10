@@ -11,18 +11,18 @@ import Animate from '../../Motion';
 
 const Feature = (props) => {
 return (
-    <div className='bg-light'>
-            <div className='text-center padding' style={{maxWidth:700,margin:"auto"}}>
+    <div className='bg-light text-center' style={{float:"left",width:"100vw"}}>
+            <div className='padding' style={{maxWidth:700,margin:"auto"}}>
+                <br/>
+                <br/>
                 {props.title ?  <h1 className={props.variant}>{props.title}</h1>:null}
                 {props.body ?  <h6 className={props.variant}>{props.body}</h6>:null}
             </div>
             <Row>
             {props.items ? props.items.slice(0,4).map(function(product,key){
                             return(
-                                <Col sm={12} md={3} key={key}>
-                                <Animate>
+                                <Col xs={6} sm={6} md={4} key={key}>
                                 <Product key={key} item={product}/>
-                                </Animate>
                                 </Col>
                             );
                         }):<Spinner animation="border" role="status">

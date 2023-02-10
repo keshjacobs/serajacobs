@@ -27,19 +27,24 @@
 
 .product{
     color: #000 !important;
-    float: left !important;
-    direction: ltr !important;
-    height: 500px !important;
     position: relative;
-    display: block;
     text-align: center !important;
-    width: 100% !important;
+    padding: 10px !important;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .btn-green{
     background-color: green !important;
 }
-
+.product:hover {
+    box-shadow: 0px 0px 10px 0px lightgray;
+    transform: translateY(-10px);
+  }
+  
 
 
 .details{
@@ -48,6 +53,21 @@
     display: block;
     width: 100% !important;
 }
+
+.details v{
+    font-size: 18px !important;
+    font-weight: bolder !important;
+    text-align: center !important;
+}
+
+.details h6{
+    font-size: 15px !important;
+    font-weight: lighter !important;
+    text-align: center !important;
+    font-style: normal !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .details .accordion-button{
     width: 85% !important;
     float: left !important;
@@ -58,15 +78,12 @@
 
 
 .product-image{
-    float: left;
-    display: block;
     width: 100% !important;
-    height: 380px !important;
-    background-size: contain;
+    height:400px !important;
+    background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative !important;
-    margin-bottom: 20px !important;
+    float: left !important;
   }
 
 

@@ -5,6 +5,7 @@ import Cart from '../Items/Cart';
 import Search from '../Items/Search';
 import Commerce from '@chec/commerce.js';
 import app from '../../Config';
+import { NavLink } from 'react-router-dom';
 const commerce = new Commerce(app.public_key);
 
 const HeadBar = (props) => {
@@ -17,10 +18,9 @@ const HeadBar = (props) => {
 return (
 <>
       <Navbar sticky="top" variant={props.dark ? "dark":"light"} expand="lg" className={props.dark ? 'bg-dark headbar justify-content-evenly':'bg-light headbar justify-content-evenly'}>
-          <Container>
-           
-          
-          
+          <Container fluid>
+
+          <Navbar.Toggle aria-controls="menu" />
           <Navbar.Brand href="/" style={{float:"left"}}>
             {props.icon ? 
             <>
@@ -36,16 +36,16 @@ return (
 
 
             <Navbar.Text>
-              <b className='orange'>Sera</b><b>Jacobs</b>
+              <a href="/"><b className='orange'>Sera</b>Jacobs</a>
             </Navbar.Text>
 
             <Navbar.Collapse className="justify-content-evenly"  placement="end" closeButton>
                 {category.map(function(Link,i){
                     return(  
                         <Nav  key={i}>
-                        <Nav.Link  key={i} href={"/shop/"+Link.slug}  className="link" activeStyle={{color:'green'}} to={"/shop/"+Link.slug}>
+                        <NavLink activeClassName="active" exact key={i} href={"/shop/"+Link.slug} to={"/shop/"+Link.slug}>
                         &nbsp;{Link.name} &nbsp; &nbsp;
-                        </Nav.Link>
+                        </NavLink>
                         </Nav>
                     )
                 })
@@ -53,12 +53,11 @@ return (
               <Nav>
                 <Search dark={true}/>
               </Nav>
-              <br/>
             </Navbar.Collapse>
+
             <Nav>
                 <Cart/>
             </Nav>
-            <Navbar.Toggle aria-controls="menu" />
             </Container>
       </Navbar>
     </>

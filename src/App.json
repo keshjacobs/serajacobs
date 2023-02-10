@@ -34,10 +34,20 @@
             "path":"/policies/Terms"
         }
     ],
-    "content":[
+    "slideshow":[
         {   
             "title":"Affordable & Ready To Wear",
             "body":"Brand new, and already icon-worthy"
+        },
+        {
+            "title":"Breathtaking women's clothing",
+            "body":"Giving the right balance between upscale fashion and attainability"
+         }
+    ],
+    "content":[
+        {   
+            "title":"Technical. Tailored. Sustainable.",
+            "body":"Premium craftsmanship delivered directly to you. Sustainably produced in limited quantities"
         },
         {
             "title":"Affordable & Ready To Wear",

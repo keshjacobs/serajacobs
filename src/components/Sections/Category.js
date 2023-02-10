@@ -14,7 +14,7 @@ return (
            <Row>
             {props.items.map(function(item,key){
                             return(
-                                <Col sm={12} md={4} key={key}>
+                                <Col xs={6} sm={6} md={4} key={key}>
                                 <View key={key} data={item}/>
                                 </Col>
                             );

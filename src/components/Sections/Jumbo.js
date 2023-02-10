@@ -8,24 +8,19 @@ import Animate from '../../Motion';
 const Jumbo = (props) => {
 return (
 <div className="box text-left" style={{backgroundImage: `url(${props.image}`}}>
-<br/><br/>
-<br/><br/>
-<br/><br/>
         <Animate>
-        <p style={{maxWidth:"400px"}}>
-          <b style={{fontSize:50}}>{props.title}</b>
-        </p>
-        <p style={{maxWidth:"380px"}}>
-         {props.body}
-        </p>
-          <br/>
-        <p>
+            <p style={{maxWidth:"400px"}}>
+                <b style={{fontSize:50}}>{props.title}</b>
+            </p>
+            <p style={{maxWidth:"380px"}}>
+                {props.body}
+                <br/>
+                <br/>
                 {
                 props.button ? props.button:null
                 }
-        </p>
+            </p>
         </Animate>
-        <br/>
 </div>
 
 );

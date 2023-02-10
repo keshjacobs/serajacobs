@@ -129,10 +129,15 @@ background-color: rgb(255, 182, 45) !important;
 
 
 
+.navbar-nav a{
+    color: rgb(167, 167, 167);
+}
 
 
-
-
+.nav-link:hover,.navbar-nav .active {
+    color: rgb(255, 243, 131) !important;
+    font-weight: bolder !important;
+  }
 
 
 
