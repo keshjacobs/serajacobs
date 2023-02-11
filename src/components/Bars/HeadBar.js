@@ -21,22 +21,29 @@ return (
           <Container fluid>
 
           <Navbar.Toggle aria-controls="menu" />
-          <Navbar.Brand href="/" style={{float:"left"}}>
+          {/* <Navbar.Brand href="/" style={{float:"left"}}>
             {props.icon ? 
             <>
                       <img
                         alt="logo"
                         src={props.icon}
-                        style={{height:28,margin:"auto",marginTop:-8}}
+                        style={{height:28,marginTop:-8}}
                       />&nbsp;
             </>:null
               }
 
-            </Navbar.Brand>
+            </Navbar.Brand> */}
 
 
-            <Navbar.Text>
-              <a href="/"><b className='orange'>Sera</b>Jacobs</a>
+            <Navbar.Text xs={false} sm={false}>
+              <a xs={false} sm={false} href="/">
+                      <img
+                        alt="logo"
+                        src={props.icon}
+                        style={{height:28,marginTop:-8}}
+                      />&nbsp;
+                      <b className='orange'>Sera</b>Jacobs
+              </a>
             </Navbar.Text>
 
             <Navbar.Collapse className="justify-content-evenly"  placement="end" closeButton>

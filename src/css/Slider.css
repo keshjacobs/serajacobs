@@ -1,18 +1,21 @@
 .carousel{
-    min-height: 600px;
+    min-height: 490px;
     float: left !important;
     background-color: #000 !important;
     width: 100% !important;
     margin: 0px !important;
 }
+
 .carousel-item{
     float: left !important;
     background-size: cover !important;
     background-repeat:no-repeat !important;
     background-position: center !important;
-    height: 80vh;
+    height: 90vh;
     width: 100% !important;
+    background: rgba(13, 89, 13, 0.64);
 }
+
 .slider-caption{
     padding: 30px !important;
     max-width: 420px !important;

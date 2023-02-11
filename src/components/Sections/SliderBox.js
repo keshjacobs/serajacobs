@@ -13,16 +13,11 @@ const SlideBox = function(props) {
   
   {props.items ? props.items.map(function(slide,key){
    return(
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={slide.image}
-          alt={slide.title}
-        />
+      <Carousel.Item style={{backgroundImage:"url("+slide.image+")"}}>
         <Carousel.Caption>
             <Animate>
                 <p style={{maxWidth:"500px"}}>
-                <b style={{fontSize:60}}>{slide.title}</b>
+                <b style={{fontSize:40}}>{slide.title}</b>
                 </p>
                 <p style={{maxWidth:"390px"}}>
                 {slide.body}

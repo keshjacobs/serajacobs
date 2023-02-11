@@ -21,7 +21,7 @@ return (
             <Row>
             {props.items ? props.items.slice(0,4).map(function(product,key){
                             return(
-                                <Col xs={6} sm={6} md={4} key={key}>
+                                <Col xs={6} sm={6} md={3} key={key}>
                                 <Product key={key} item={product}/>
                                 </Col>
                             );

@@ -6,7 +6,7 @@ import about from "./images/ads/boss.jpeg";
 import img1 from "./images/ads/1.jpeg";
 import img2 from "./images/ads/2.webp";
 import slider1 from "./images/sliders/1.jpeg";
-import slider2 from "./images/sliders/2.jpg";
+import slider2 from "./images/sliders/2.webp";
 import appicon from "./images/icon.png";
 import app from "./App.json";
 import ActionButton from "./components/Buttons/ActionButton";
