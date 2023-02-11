@@ -5,7 +5,7 @@ import React,{ useEffect, useState} from 'react';
 import {
   useParams
 } from "react-router-dom";
-import { Row,Col,Form, Image,Breadcrumb, Spinner} from 'react-bootstrap';
+import { Row,Col,Form, Image,Breadcrumb, Spinner, Container} from 'react-bootstrap';
 import Animate from '../Motion';
 import "../css/Products.css";
 import app from "../Config";
@@ -17,6 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import {stripHtml} from 'string-strip-html';
 import SlideBox from '../components/Sections/SliderBox';
+import ProductSlider from '../components/Sections/ProductSlider';
 
 const commerce = new Commerce(app.public_key);
 
@@ -75,12 +76,14 @@ var Item = function() {
                 {product ? product.name:null}
             </Breadcrumb.Item>
         </Breadcrumb>
+        <Container>
         <div className='row'>
             <Col sm={12} md={7}>
                 {mainImage ? 
                     <Animate>
                         {/* <Image className='item-image' src={mainImage}/> */}
-                        <SlideBox items={product.assets}/>
+                        {/* <SlideBox items={product.assets}/> */}
+                        <ProductSlider images={product.assets}/>
                     </Animate>
                     :<Spinner className='dark center' animation="border" />
                 }   
@@ -158,6 +161,7 @@ var Item = function() {
                 </div>
             </Col>
         </div>
+        </Container>
         <br/>
     <br/>
     <br/>
