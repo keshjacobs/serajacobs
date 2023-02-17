@@ -78,7 +78,7 @@ var Item = function() {
         </Breadcrumb>
         <Container>
         <div className='row'>
-            <Col sm={12} md={7}>
+            <Col xs={12} sm={12} md={7}>
                 {mainImage ? 
                     <Animate>
                         {/* <Image className='item-image' src={mainImage}/> */}
@@ -105,7 +105,7 @@ var Item = function() {
                 </Row> */}
             </Col>
 
-            <Col sm={12} md={5}>
+            <Col xs={12} sm={12} md={5}>
                 <div className='padding'>
             {product ? 
                 <div style={{padding:10}}>
@@ -116,6 +116,8 @@ var Item = function() {
                         <small>{category}</small>
                         <h6><small>ID: {product.id}</small></h6>
                         <b className='green'>{product.price ? product.price.formatted_with_symbol:0}</b>
+                        <br/>
+                        <br/>
                         <br/>
                         {description}
 

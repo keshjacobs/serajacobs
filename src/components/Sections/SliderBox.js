@@ -16,15 +16,10 @@ const SlideBox = function(props) {
       <Carousel.Item style={{backgroundImage:"url("+slide.image+")"}}>
         <Carousel.Caption>
             <Animate>
-                <p style={{maxWidth:"600px"}}>
-                 <b style={{fontSize:40}}>{slide.title}</b>
-                </p>
-                <p style={{maxWidth:"390px"}}>
-                {slide.body}
-                <br/>
-                <br/>
-                {slide.button}
-                </p>
+                  <h2>{slide.title}</h2>
+                  <h5>{slide.body}</h5>
+                  <br/>
+                  {slide.button}
             </Animate>
         </Carousel.Caption>
       </Carousel.Item>

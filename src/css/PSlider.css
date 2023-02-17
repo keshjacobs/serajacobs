@@ -1,0 +1,31 @@
+
+.pslide{
+    float: left !important;
+    background-size:cover !important;
+    background-repeat:no-repeat !important;
+    background-position: center !important;
+    height: 35vh;
+    width: 100% !important;
+    background-color: rgba(255, 255, 255, 0.944) !important;
+    padding: 0px !important;
+}
+
+
+
+.carousel{
+    min-height: 500px;
+    float: left !important;
+    background-color: #dedede00 !important;
+    width: 100% !important;
+    margin: 0px !important;
+}
+
+.carousel-item{
+    float: left !important;
+    background-size: cover !important;
+    background-repeat:no-repeat !important;
+    background-position: center !important;
+    height: 500px;
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0);
+}

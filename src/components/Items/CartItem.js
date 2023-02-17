@@ -3,7 +3,6 @@ import "../../css/Cart.css";
 import { Row ,Col,Image,Spinner} from 'react-bootstrap';
 import app from "../../Config";
 import Commerce from '@chec/commerce.js';
-const commerce = new Commerce(app.public_key);
 
 
 function CartItem(props){
@@ -18,7 +17,7 @@ function CartItem(props){
 return (
 <div className="cart-item">
     <Row>
-        <Col md={true} sm={12}>
+        <Col md={true} xs={12} sm={12}>
             <br/>
             <div className='cart-product'>
                 {/* <div className='cart-image' style={{backgroundImage:`url(${props.item.image.url})`}}>
@@ -32,7 +31,7 @@ return (
                 </div>
             </div>
         </Col>
-        <Col md={true} sm={12} className="text-right">
+        <Col md={true} sm={12} xs={12} className="text-right">
             <br/>
 
                 <div className="counter">

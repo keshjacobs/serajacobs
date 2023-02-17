@@ -15,12 +15,13 @@ function Cart(props){
     const [show, setShow] = useState(false);
     const [Loading, startLoad] = useState(true); 
     
-    
-    commerce.cart.retrieve().then(function(crt){ 
-        if(crt){
-            getCart(crt);
-        }
-   }); 
+    useEffect(function(){
+        commerce.cart.retrieve().then(function(crt){ 
+            if(crt){
+                getCart(crt);
+            }
+       }); 
+    },[])
 
 
     const handleShow = () =>{

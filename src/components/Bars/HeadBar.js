@@ -35,8 +35,8 @@ return (
             </Navbar.Brand> */}
 
 
-            <Navbar.Text xs={false} sm={false}>
-              <a xs={false} sm={false} href="/">
+            <Navbar.Text>
+              <a href="/">
                       <img
                         alt="logo"
                         src={props.icon}
@@ -46,11 +46,11 @@ return (
               </a>
             </Navbar.Text>
 
-            <Navbar.Collapse className="justify-content-evenly"  placement="end" closeButton>
+            <Navbar.Collapse className="justify-content-evenly"  placement="end">
                 {category.map(function(Link,i){
                     return(  
                         <Nav  key={i}>
-                        <NavLink activeClassName="active" exact key={i} href={"/shop/"+Link.slug} to={"/shop/"+Link.slug}>
+                        <NavLink key={i} href={"/shop/"+Link.slug} to={"/shop/"+Link.slug}>
                         &nbsp;{Link.name} &nbsp; &nbsp;
                         </NavLink>
                         </Nav>

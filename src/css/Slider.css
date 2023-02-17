@@ -21,13 +21,14 @@
     max-width: 550px !important;
     margin: 10px !important;
     height: auto !important;
-    display: inline-block !important;
+    display: block !important;
     background: rgba(0, 0, 0, 0.64);
     background: linear-gradient(144deg, rgb(96, 16, 36) 3%, rgba(10, 0, 3, 0.663) 57%, rgba(0, 0, 0, 0.526) 80%);
     color: #fff !important;
     bottom: 0px !important;
     position:absolute !important;
     border-radius: 9px !important;
+    float: left !important;
     border: 1px solid linear-gradient(144deg, rgb(202, 1, 45) 3%, rgba(121, 2, 36, 0.663) 57%, rgba(32, 1, 10, 0.246) 80%);
    
 }
@@ -46,16 +47,6 @@
     font-weight: lighter !important;
 }
 
-
-.pslide{
-    float: left !important;
-    background-size:cover !important;
-    background-repeat:no-repeat !important;
-    background-position: center !important;
-    height: 90vh;
-    width: 100% !important;
-    background-color: rgba(149, 149, 149, 0.027) !important;
-}
 
 
 
