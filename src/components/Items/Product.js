@@ -14,7 +14,7 @@ function Product(props) {
         <Animate>
           <div className='product-image' style={{backgroundImage:"url("+(product.image ? product.image.url:null)+")"}}></div>
           <div className='details'>
-              <v>{product.name}</v>
+              <b>{product.name}</b>
               <h6><b>{product.price ? product.price.formatted_with_symbol:0}</b></h6>
           </div>
         </Animate>
