@@ -14,8 +14,7 @@ import Mirror from '../components/Items/Mirror';
 import Error from '../components/Items/Error';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-import {stripHtml} from 'string-strip-html';
+import stripHtml from 'string-strip-html';
 import SlideBox from '../components/Sections/SliderBox';
 import ProductSlider from '../components/Sections/ProductSlider';
 
